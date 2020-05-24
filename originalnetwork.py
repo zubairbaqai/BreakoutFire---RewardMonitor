@@ -396,9 +396,9 @@ def learn(env,
 
             start_time = time.time()
             rew, is_perm = multi_monitor(new_obs)
-            print("--- %s seconds ---" % (time.time() - start_time))
+            #print("--- %s seconds ---" % (time.time() - start_time))
             old_state=new_obs
-            print(rew)
+            #print(rew)
 
 
             done=done or is_perm
@@ -507,9 +507,6 @@ def check_ordered(bricks):
 
 
 
-
-
-    print("All good")
     print(bricks)
     #time.sleep(2)
     return True
